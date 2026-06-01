@@ -40,4 +40,16 @@
     <lastmod>2026-06-01</lastmod>
     <priority>0.7</priority>
   </url>
+  
+  <!-- Template pages (to be filled later) -->
+  <url>
+    <loc>https://qgogo-tec.github.io/products/sharp-template.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://qgogo-tec.github.io/products/samsung-template.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <priority>0.6</priority>
+  </url>
 </urlset>
