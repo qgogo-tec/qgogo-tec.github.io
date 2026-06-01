@@ -60,7 +60,7 @@ if (contactForm) {
         
         // Here you would normally send the data to a server
         // For now, we'll just show a success message
-        alert('感謝您的詢問！我們會盡快與您聯絡。');
+        alert('感謝您的詢問！我們會儘快與您聯絡。');
         this.reset();
     });
 }
@@ -81,7 +81,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe product cards
-document.querySelectorAll('.product-card, .feature-item, .installation-item').forEach(card => {
+document.querySelectorAll('.product-card, .feature-item, .store-card, .review-card').forEach(card => {
     card.style.opacity = '0';
     card.style.transform = 'translateY(30px)';
     card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
