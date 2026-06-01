@@ -272,40 +272,103 @@ body {
     color: #64748b;
 }
 
-/* Installation Section */
-.installation {
-    background: #f0f9ff;
+/* Stores Section */
+.stores {
     padding: 4rem 0;
+    background: #f0f9ff;
 }
 
-.installation-content {
+.stores-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }
 
-.installation-item {
+.store-card {
     background: white;
     padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
 
-.installation-item h3 {
+.store-card h3 {
+    color: #1e3a8a;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.store-card p {
+    margin-bottom: 0.5rem;
+    color: #334155;
+}
+
+.store-button {
+    display: inline-block;
+    margin-top: 1rem;
+    background: #1e3a8a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.store-button:hover {
+    background: #3b82f6;
+}
+
+/* Reviews Section */
+.reviews {
+    padding: 4rem 0;
+    background: white;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.review-card {
+    background: #f8fafc;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.review-card h3 {
     color: #1e3a8a;
     margin-bottom: 1rem;
     font-size: 1.3rem;
 }
 
-.installation-item p {
-    color: #64748b;
+.review-card p {
+    color: #334155;
+    margin-bottom: 1.5rem;
+}
+
+.review-button {
+    display: inline-block;
+    background: #1e3a8a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.review-button:hover {
+    background: #3b82f6;
 }
 
 /* Contact Section */
 .contact {
     padding: 4rem 0;
-    background: white;
+    background: #f8fafc;
 }
 
 .contact-content {
@@ -333,6 +396,27 @@ body {
 
 .contact-info a:hover {
     text-decoration: underline;
+}
+
+.social-links {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #1e3a8a;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.social-links a:hover {
+    background: #3b82f6;
 }
 
 .contact-form {
