@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>夏普 Sharp - 日本科技智能鎖專家 | 人臉辨識電子鎖</title>
+    <meta name="description" content="夏普 Sharp 智能鎖專區 - 日本技術品質保證。人臉指紋智能鎖 H4、702fvp 人臉辨識貓眼電子鎖。先進科技守護您的居家安全。">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="夏普 Sharp - 日本科技智能鎖專家">
+    <meta property="og:description" content="日本技術品質保證。人臉指紋智能鎖 H4、702fvp 人臉辨識貓眼電子鎖。">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="zh_TW">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "夏普 Sharp 智能鎖品牌頁面",
+        "description": "夏普 Sharp 智能鎖專區 - 日本技術品質保證",
+        "brand": {
+            "@type": "Brand",
+            "name": "Sharp",
+            "description": "日本知名電子品牌，以先進顯示技術和創新產品聞名"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Product",
+                        "name": "夏普 Sharp H4 人臉指紋智能鎖",
+                        "description": "人臉辨識、指紋、密碼、卡片多功能智能鎖",
+                        "brand": "Sharp",
+                        "model": "H4"
+                    },
+                    "price": "22500",
+                    "priceCurrency": "TWD"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Product",
+                        "name": "夏普 702fvp 人臉辨識貓眼電子鎖（無連線版）",
+                        "description": "人臉辨識貓眼電子鎖，無連線功能版本",
+                        "brand": "Sharp",
+                        "model": "702fvp"
+                    },
+                    "price": "16500",
+                    "priceCurrency": "TWD"
+                }
+            ]
+        }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* 夏普品牌專屬樣式 */
+        :root {
+            --sharp-red: #E60012;
+            --sharp-dark: #1a1a1a;
+            --sharp-light-gray: #f5f5f5;
+        }
+        
+        body {
+            font-family: 'Microsoft JhengHei', 'PingFang TC', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+        
+        .sharp-header {
+            background: linear-gradient(135deg, var(--sharp-dark) 0%, #333 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        .sharp-header h1 {
+            font-size: 2.5em;
+            margin: 0 0 10px 0;
+            font-weight: 700;
+        }
+        
+        .sharp-header .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .brand-story {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+        
+        .brand-story h2 {
+            color: var(--sharp-dark);
+            border-left: 5px solid var(--sharp-red);
+            padding-left: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .brand-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .feature-card {
+            background: var(--sharp-light-gray);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .feature-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+            color: var(--sharp-red);
+        }
+        
+        .products-section {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+        
+        .products-section h2 {
+            color: var(--sharp-dark);
+            border-left: 5px solid var(--sharp-red);
+            padding-left: 15px;
+            margin-bottom: 40px;
+        }
+        
+        .product-card {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 15px;
+            margin-bottom: 50px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+        
+        .product-header {
+            background: linear-gradient(135deg, var(--sharp-dark) 0%, #444 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .product-header h3 {
+            font-size: 2em;
+            margin: 0 0 10px 0;
+        }
+        
+        .product-header .product-type {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .product-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            padding: 40px;
+        }
+        
+        .product-image {
+            background: var(--sharp-light-gray);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 400px;
+            overflow: hidden;
+        }
+        
+        .product-image img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        
+        .product-info {
+            padding: 20px 0;
+        }
+        
+        .spec-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        .spec-table th,
+        .spec-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .spec-table th {
+            background: var(--sharp-light-gray);
+            font-weight: 600;
+            width: 30%;
+            color: var(--sharp-dark);
+        }
+        
+        .price-section {
+            background: linear-gradient(135deg, #fff5f5 0%, #ffe0e0 100%);
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        .original-price {
+            font-size: 1.2em;
+            color: #999;
+            text-decoration: line-through;
+            margin-bottom: 5px;
+        }
+        
+        .sale-price {
+            font-size: 2.5em;
+            color: var(--sharp-red);
+            font-weight: 700;
+            margin: 10px 0;
+        }
+        
+        .sale-price .currency {
+            font-size: 0.6em;
+            vertical-align: super;
+        }
+        
+        .contact-btn {
+            display: inline-block;
+            background: var(--sharp-red);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: all 0.3s;
+            font-size: 1.1em;
+        }
+        
+        .contact-btn:hover {
+            background: #cc0010;
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(230, 0, 18, 0.3);
+        }
+        
+        .warning-note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .warning-note strong {
+            color: #856404;
+        }
+        
+        @media (max-width: 768px) {
+            .sharp-header h1 {
+                font-size: 1.8em;
+            }
+            
+            .product-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .product-image {
+                min-height: 300px;
+            }
+            
+            .brand-features {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .sharp-header {
+                padding: 40px 15px;
+            }
+            
+            .product-header {
+                padding: 20px;
+            }
+            
+            .product-content {
+                padding: 20px;
+            }
+            
+            .sale-price {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 品牌介紹區 -->
+    <div class="sharp-header">
+        <h1>SHARP 夏普</h1>
+        <div class="subtitle">日本科技 × 智能安防 - 創新技術守護居家安全</div>
+    </div>
+    
+    <div class="brand-story">
+        <h2>品牌故事</h2>
+        <p style="font-size: 1.1em; line-height: 1.8; color: #333;">
+            夏普（Sharp）成立於1912年，是日本最具代表性的電子品牌之一。從發明世界第一支自動鉛筆「Ever-Ready Sharp」開始，
+            夏普始終秉持「誠意與創意」的企業精神，不斷追求技術創新。在顯示技術、太陽能電池、以及智能家電領域，
+            夏普以其卓越的日本工藝技術和嚴謹的品質控管，贏得全球消費者的信賴。
+        </p>
+        <p style="font-size: 1.1em; line-height: 1.8; color: #333; margin-top: 20px;">
+            如今，夏普將其在電子技術的深厚積累應用於智能安防領域，推出結合人臉辨識、指紋識別等先進技術的智能鎖產品。
+            每一把夏普智能鎖都承載著日本技術的精髓，為您的家庭提供最可靠的安全防護。
+        </p>
+        
+        <div class="brand-features">
+            <div class="feature-card">
+                <div class="feature-icon">🇯🇵</div>
+                <h3>日本技術</h3>
+                <p>嚴謹的日本工藝與品質控管標準</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3>安全可靠</h3>
+                <p>多重防護機制，守護居家安全</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💡</div>
+                <h3>創新科技</h3>
+                <p>人臉辨識、指紋識別等先進技術</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🏠</div>
+                <h3>智能生活</h3>
+                <p>讓科技融入生活，提升居住品質</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 產品列表區 -->
+    <div class="products-section">
+        <h2>夏普智能鎖產品系列</h2>
+        
+        <!-- 產品 1: 夏普 Sharp H4 -->
+        <div class="product-card" id="product-h4">
+            <div class="product-header">
+                <h3>夏普 Sharp H4</h3>
+                <div class="product-type">人臉指紋智能鎖</div>
+            </div>
+            
+            <div class="product-content">
+                <div class="product-image">
+                    <!-- 佔位圖 - 實際使用時替換為 ../images/sharp-h4.jpg -->
+                    <svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="400" height="400" fill="#f5f5f5"/>
+                        <text x="200" y="180" font-size="24" text-anchor="middle" fill="#999">Sharp H4</text>
+                        <text x="200" y="220" font-size="18" text-anchor="middle" fill="#999">人臉指紋智能鎖</text>
+                        <text x="200" y="260" font-size="14" text-anchor="middle" fill="#bbb">圖片佔位區</text>
+                        <text x="200" y="290" font-size="12" text-anchor="middle" fill="#ccc">請放置 ../images/sharp-h4.jpg</text>
+                    </svg>
+                </div>
+                
+                <div class="product-info">
+                    <h3 style="color: #1a1a1a; margin-top: 0;">產品規格</h3>
+                    
+                    <table class="spec-table">
+                        <tr>
+                            <th>材質</th>
+                            <td>鋁合金</td>
+                        </tr>
+                        <tr>
+                            <th>顏色</th>
+                            <td>曜石黑 / 紅古銅</td>
+                        </tr>
+                        <tr>
+                            <th>工作電源</th>
+                            <td>鋰聚合物電池</td>
+                        </tr>
+                        <tr>
+                            <th>室外開門方式</th>
+                            <td>人臉 / 指紋 / 密碼 / 卡片 / 臨時密碼 / 機械鑰匙</td>
+                        </tr>
+                        <tr>
+                            <th>室內開門方式</th>
+                            <td>旋鈕、OPEN鍵</td>
+                        </tr>
+                    </table>
+                    
+                    <div class="price-section">
+                        <div class="original-price">售價：$22,500</div>
+                        <div class="sale-price">
+                            <span class="currency">$</span>22,500
+                        </div>
+                        <p style="color: #666; margin: 10px 0;">活動價</p>
+                        <a href="#contact" class="contact-btn">立即諮詢</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 產品 2: 702fvp（無連線版） -->
+        <div class="product-card" id="product-702fvp">
+            <div class="product-header">
+                <h3>夏普 702fvp（無連線版）</h3>
+                <div class="product-type">人臉辨識貓眼電子鎖</div>
+            </div>
+            
+            <div class="product-content">
+                <div class="product-image">
+                    <!-- 佔位圖 - 實際使用時替換為 ../images/sharp-702fvp.jpg -->
+                    <svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="400" height="400" fill="#f5f5f5"/>
+                        <text x="200" y="180" font-size="24" text-anchor="middle" fill="#999">Sharp 702fvp</text>
+                        <text x="200" y="220" font-size="18" text-anchor="middle" fill="#999">人臉辨識貓眼電子鎖</text>
+                        <text x="200" y="260" font-size="14" text-anchor="middle" fill="#bbb">（無連線版）</text>
+                        <text x="200" y="290" font-size="12" text-anchor="middle" fill="#ccc">請放置 ../images/sharp-702fvp.jpg</text>
+                    </svg>
+                </div>
+                
+                <div class="product-info">
+                    <div class="warning-note">
+                        <strong>⚠️ 重要提醒：</strong>此版本為「無連線版」，不具備手機APP連線功能。如需遠端控制功能，請選購標準版。
+                    </div>
+                    
+                    <h3 style="color: #1a1a1a; margin-top: 30px;">產品規格</h3>
+                    
+                    <table class="spec-table">
+                        <tr>
+                            <th>產品類型</th>
+                            <td>人臉辨識貓眼電子鎖</td>
+                        </tr>
+                        <tr>
+                            <th>連線功能</th>
+                            <td>無（此為無連線版）</td>
+                        </tr>
+                        <tr>
+                            <th>主要功能</th>
+                            <td>人臉辨識開鎖、貓眼監控</td>
+                        </tr>
+                        <tr>
+                            <th>適用場景</th>
+                            <td>無需遠端控制，重視基本防護的用戶</td>
+                        </tr>
+                    </table>
+                    
+                    <div class="price-section">
+                        <div class="original-price">售價：$22,500</div>
+                        <div class="sale-price">
+                            <span class="currency">$</span>16,500
+                        </div>
+                        <p style="color: #666; margin: 10px 0;">活動價（省 $6,000）</p>
+                        <a href="#contact" class="contact-btn">立即諮詢</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 聯絡方式錨點 -->
+    <div id="contact" style="max-width: 800px; margin: 50px auto; padding: 40px 20px; text-align: center;">
+        <h2 style="color: #1a1a1a;">立即諮詢夏普智能鎖</h2>
+        <p style="font-size: 1.1em; color: #666; margin: 20px 0;">
+            我們的專業團隊將為您提供詳細的產品介紹與安裝服務諮詢
+        </p>
+        <div style="margin-top: 30px;">
+            <p style="font-size: 1.2em; margin: 10px 0;"><strong>服務專線：</strong> 0800-XXX-XXX</p>
+            <p style="font-size: 1.2em; margin: 10px 0;"><strong>營業時間：</strong> 週一至週五 09:00-18:00</p>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer style="background: #1a1a1a; color: white; text-align: center; padding: 30px 20px; margin-top: 50px;">
+        <p>&copy; 2024 Sharp Corporation. All rights reserved. | 夏普智能鎖專區</p>
+    </footer>
+</body>
+</html>
